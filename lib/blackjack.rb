@@ -29,12 +29,19 @@ def initial_round
   display_card_total(total)
 end
 
-def hit?
-  # code hit? here
+def hit?(current_card_total)
+  prompt_user
+  user_input = get_user_input
+  if user_input == 's'
+    puts "You chose to stay"
+  elsif user_input == 'h'
+    hit = deal_card
+    current_card_total += hit
 end
 
 def invalid_command
-  # code invalid_command here
+  puts "Please enter a valid command"
+  prompt_user
 end
 
 #####################################################
