@@ -64,7 +64,7 @@ def runner
   if next_move < 21 
     runner 
   else 
-    end_game 
+    end_game(next_move) 
   end 
 end 
  
