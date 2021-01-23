@@ -47,7 +47,8 @@ end
 def invalid_command
 
   print "Please enter a valid command"
-  
+  prompt_user
+end
   
 end
 
