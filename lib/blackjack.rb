@@ -33,10 +33,11 @@ def hit?(current_card_total)
   prompt_user
   user_input = get_user_input
   if user_input == 's'
-    puts "You chose to stay"
+    current_card_total
   elsif user_input == 'h'
     hit = deal_card
     current_card_total += hit
+    current_card_total
 end
 
 def invalid_command
