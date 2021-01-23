@@ -49,7 +49,6 @@ def invalid_command
   prompt_user
 end
   
-end
 
 #####################################################
 # get every test to pass before coding runner below #
